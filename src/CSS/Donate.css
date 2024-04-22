@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+.main {
+    width: 100%;
+    font-family: platypi;
+}
+.body {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+.center {
+    text-align: center;
+}
+.paypal-image {
+    width: 10px; 
+}

@@ -7,34 +7,39 @@ import Wharton from '../Images/Wharton.jpg';
 
 
 
-const scholarshipInfo = (
-    <div>
-        <p>An undergraduate member, current in all financial obligations to the Alpha and the Alpha Rho Alumni Association, living in the Lodge or, at the Trustees' discretion, a member who applied to live in the Lodge, but was excluded due to space limitations or unavoidable housing contracts, is eligible to apply annually for both Incentive and Improvement Awards which may be awarded by the Trustees based on each eligible member's application and the listed criteria including Chi Psi Conduct.</p>
-        <h3>Scholarship Incentive Awards</h3>
-        <p>Eligible members may apply annually for a Scholarship Incentive Awards on the basis of their cumulative grades at the close of the Fall Term. An application recommended by the Trustees of the Alpha Rho Alumni Association will be considered by the Trustees of the Foundation. The following awards are available:</p>
-        <div class="row">
-            <p class="section">
-                <u>GPA</u>
-                <br />
-                3.4 - 3.699
-                <br />
-                3.7 or higher	
-            </p>
-            <p class="section">
-                <u>Award</u>
-                <br />
-                $200
-                <br />
-                $300
-            <p/>
-            </p>
-            </div>
-            <h3>Scholarship Improvement Awards</h3>
-            <p>Eligible members may also apply annually for Scholarship Improvement Awards. An award is available to the five (5) eligible members whose cumulative Grade Point Averages have improved the most of all members applying for the awards. Improvement is measured by comparing cumulative final grades from two successive Fall Terms, the second of which shall be the Fall Term immediately preceding the date of the application. An application recommended by the Trustees of the Alpha Rho Alumni Association will be considered by the Trustees of the Foundation. Five $250 awards are available. </p>
-        </div>
-);
+
+
 
 const Programs = () => {
+
+    const scholarshipInfo = (
+        <div>
+            <p>An undergraduate member, current in all financial obligations to the Alpha and the Alpha Rho Alumni Association, living in the Lodge or, at the Trustees' discretion, a member who applied to live in the Lodge, but was excluded due to space limitations or unavoidable housing contracts, is eligible to apply annually for both Incentive and Improvement Awards which may be awarded by the Trustees based on each eligible member's application and the listed criteria including Chi Psi Conduct.</p>
+            <h3>Scholarship Incentive Awards</h3>
+            <p>Eligible members may apply annually for a Scholarship Incentive Awards on the basis of their cumulative grades at the close of the Fall Term. An application recommended by the Trustees of the Alpha Rho Alumni Association will be considered by the Trustees of the Foundation. The following awards are available:</p>
+            <div class="row">
+                <p class="section">
+                    <u>GPA</u>
+                    <br />
+                    3.4 - 3.699
+                    <br />
+                    3.7 or higher	
+                </p>
+                <p class="section">
+                    <u>Award</u>
+                    <br />
+                    $200
+                    <br />
+                    $300
+                <p/>
+                </p>
+                </div>
+                <h3>Scholarship Improvement Awards</h3>
+                <p>Eligible members may also apply annually for Scholarship Improvement Awards. An award is available to the five (5) eligible members whose cumulative Grade Point Averages have improved the most of all members applying for the awards. Improvement is measured by comparing cumulative final grades from two successive Fall Terms, the second of which shall be the Fall Term immediately preceding the date of the application. An application recommended by the Trustees of the Alpha Rho Alumni Association will be considered by the Trustees of the Foundation. Five $250 awards are available. </p>
+            </div>
+    );
+
+
     const buttonNames = [
         "Neophyte Award", "T. Girard Wharton, P'25 Scholastic Excellence Awards", "H. Seger Slifer, E'12 Award", 
         "J. F. 'Jack' Schwanhausser, P'46 Leadership Award", "Dave MacDowell, P’59 Armed Forces Service Award",
@@ -51,7 +56,7 @@ const Programs = () => {
                 The Neophyte Award is given twice annually: once to a member of the Fall pledge class and once to a member of the Spring pledge class. The awards are distributed during the Spring Initiation Banquet. Awards of $150 are available.
                 <br /><br />
 
-                <img src={Neophyte}/>
+                <img src={Neophyte} alt="neophyte scholarship"/>
             </span>
             
         ),
@@ -66,7 +71,7 @@ const Programs = () => {
                 Brothers are eligible for a maximum of $500.00 in cumulative T. Girard Warton, P'25 Scholastic Excellence Awards during their tenure as an undergraduate Brother.
                 <br /><br />
 
-                <img src={Wharton}/>
+                <img src={Wharton} alt="wharton scholarship"/>
 
             </span>
         ),
@@ -79,7 +84,7 @@ const Programs = () => {
                 Thomas Carlyle's statement befits the brotherly exchange portrayed on this P&G cover from more than fifty years ago between B.M. Edwards, B'57 (alumnus initiate year), on the left, distinguished financial and civic leader in the South and fourth recipient of the Albert S. Bard Award, and H. Seger Slifer, A'11, E'12, the first #23, the 13th President of Chi Psi, and legendary figure in the fraternity world.
                 
                 <br /><br />
-                <img src={Seger}/>
+                <img src={Seger} alt="seger scholarship"/>
 
             </span>
         ),
@@ -96,7 +101,7 @@ const Programs = () => {
                 The award is provided annually to the #1 of Alpha Rho of Chi Psi, half payable at the initiation banquet next following his taking of office and half payable at the initiation banquet next following his favorable term of service as judged by the Trustees of the Foundation with input from the Trustees of the Alpha Rho Alumni Association; the amount of the award shall be $1,000 in total.
                 <br /><br />
 
-                <img src={Jack}/>
+                <img src={Jack} alt="jack scholarship"/>
 
             </span>
         ),

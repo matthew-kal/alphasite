@@ -3,6 +3,7 @@ import NavBar from './Components/NavBar.js';
 import Footer from './Components/Footer.js';
 import Home from './Pages/Home.js';
 import Programs from './Pages/Programs.js';
+import Donate from './Pages/Donate.js';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <NavBar />
       <div>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Donate />} />
           <Route path='/Programs' element={<Programs />} />
         </Routes>
       </div>
