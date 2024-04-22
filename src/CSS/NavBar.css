@@ -3,15 +3,15 @@
 .sticky-header {
   font-size: 35px;
   font-family: Platypi;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #4B3F72;
-  z-index: 1000;
-  height: 130px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  border-color: #FFD700;
-  border-width: 5px;
+  position: fixed; /* Keeps the nav bar fixed at the top */
+  top: 0; /* Aligns the nav bar at the very top of the viewport */
+  width: 100%; /* Ensures the nav bar spans the full width of the viewport */
+  background: #4B3F72; /* Background color of the nav bar */
+  z-index: 1000; /* Keeps the nav bar on top of other page elements */
+  height: 90px; /* Fixed height of the nav bar */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect for some depth */
+  border-color: #FFD700; /* Border color */
+  border-width: 5px; /* Border width */
 }
 
 .nav-menu {
@@ -49,10 +49,10 @@
 
 .chiPsiImage:hover {
   background-color: #FFD700;
-  color: #FFD700; /* Changes the text color, if there's text inside the image container */
-  transform: scale(1.1); /* Scales the image to 110% of its original size */
-  box-shadow: 0px 0px 8px rgba(255, 215, 0, 0.7); /* Applies a gold glow */
-  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  color: #FFD700; /* This doesn't apply since images don't have text color */
+  transform: scale(1.1);
+  box-shadow: 0px 0px 8px rgba(255, 215, 0, 0.7);
+  cursor: pointer;
   border-radius: 100%;
 }
 

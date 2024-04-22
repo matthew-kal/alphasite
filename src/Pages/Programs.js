@@ -5,11 +5,6 @@ import Jack from '../Images/Jack.jpg';
 import Seger from '../Images/Seger.jpg';
 import Wharton from '../Images/Wharton.jpg';
 
-
-
-
-
-
 const Programs = () => {
 
     const scholarshipInfo = (
@@ -17,48 +12,46 @@ const Programs = () => {
             <p>An undergraduate member, current in all financial obligations to the Alpha and the Alpha Rho Alumni Association, living in the Lodge or, at the Trustees' discretion, a member who applied to live in the Lodge, but was excluded due to space limitations or unavoidable housing contracts, is eligible to apply annually for both Incentive and Improvement Awards which may be awarded by the Trustees based on each eligible member's application and the listed criteria including Chi Psi Conduct.</p>
             <h3>Scholarship Incentive Awards</h3>
             <p>Eligible members may apply annually for a Scholarship Incentive Awards on the basis of their cumulative grades at the close of the Fall Term. An application recommended by the Trustees of the Alpha Rho Alumni Association will be considered by the Trustees of the Foundation. The following awards are available:</p>
-            <div class="row">
-                <p class="section">
-                    <u>GPA</u>
-                    <br />
-                    3.4 - 3.699
-                    <br />
-                    3.7 or higher	
-                </p>
-                <p class="section">
-                    <u>Award</u>
-                    <br />
-                    $200
-                    <br />
-                    $300
-                <p/>
-                </p>
+            <div className="programs-row">
+                <div className="programs-section">
+                    <u>GPA</u><br/>
+                    3.4 - 3.699<br/>
+                    3.7 or higher 
                 </div>
-                <h3>Scholarship Improvement Awards</h3>
-                <p>Eligible members may also apply annually for Scholarship Improvement Awards. An award is available to the five (5) eligible members whose cumulative Grade Point Averages have improved the most of all members applying for the awards. Improvement is measured by comparing cumulative final grades from two successive Fall Terms, the second of which shall be the Fall Term immediately preceding the date of the application. An application recommended by the Trustees of the Alpha Rho Alumni Association will be considered by the Trustees of the Foundation. Five $250 awards are available. </p>
+                <div className="programs-section">
+                    <u>Award</u><br/>
+                    $200<br/>
+                    $300
+                </div>
             </div>
+            <h3>Scholarship Improvement Awards</h3>
+            <p>Eligible members may also apply annually for Scholarship Improvement Awards. An award is available to the five (5) eligible members whose cumulative Grade Point Averages have improved the most of all members applying for the awards. Improvement is measured by comparing cumulative final grades from two successive Fall Terms, the second of which shall be the Fall Term immediately preceding the date of the application. An application recommended by the Trustees of the Alpha Rho Alumni Association will be considered by the Trustees of the Foundation. Five $250 awards are available. </p>
+        </div>
     );
 
-
     const buttonNames = [
-        "Neophyte Award", "T. Girard Wharton, P'25 Scholastic Excellence Awards", "H. Seger Slifer, E'12 Award", 
-        "J. F. 'Jack' Schwanhausser, P'46 Leadership Award", "Dave MacDowell, P’59 Armed Forces Service Award",
-        "William Andrew Royce P’78 Spirit Award", "E. F. Drake, P'32 Award", "Student Grant-In-Aid", "Forms & Applications"
+        "Neophyte Award", 
+        "T. Girard Wharton, P'25 Scholastic Excellence Awards", 
+        "H. Seger Slifer, E'12 Award", 
+        "J. F. 'Jack' Schwanhausser, P'46 Leadership Award", 
+        "Dave MacDowell, P’59 Armed Forces Service Award",
+        "William Andrew Royce P’78 Spirit Award", 
+        "E. F. Drake, P'32 Award", 
+        "Student Grant-In-Aid", 
+        "Forms & Applications"
     ];
 
     const [selectedScholarship, setSelectedScholarship] = useState(buttonNames[0]);
 
     const scholarshipDescriptions = {
-        "Neophyte Award":  (
+        "Neophyte Award": (
             <span>
                 During their first year as a Brother, our newest Brothers are invited to apply for the Neophyte Award. An award is available to the Brother who, the semester after his initiation, has the highest Grade Point Average of all Brothers with whom he pledged.
                 <br /><br />
                 The Neophyte Award is given twice annually: once to a member of the Fall pledge class and once to a member of the Spring pledge class. The awards are distributed during the Spring Initiation Banquet. Awards of $150 are available.
                 <br /><br />
-
-                <img src={Neophyte} alt="neophyte scholarship"/>
+                <img src={Neophyte} alt="Neophyte Award"/>
             </span>
-            
         ),
         "T. Girard Wharton, P'25 Scholastic Excellence Awards": (
             <span>
@@ -68,11 +61,9 @@ const Programs = () => {
                 <br /><br />
                 Awards of $100 per societal induction to Association of College Honor Societies (ACHS) are also available. For a full list of the more than 60 ACHS member societies visit the ACHS Member Society Search page and select "search" while leaving the search fields blank.
                 <br /><br />
-                Brothers are eligible for a maximum of $500.00 in cumulative T. Girard Warton, P'25 Scholastic Excellence Awards during their tenure as an undergraduate Brother.
+                Brothers are eligible for a maximum of $500.00 in cumulative T. Girard Wharton, P'25 Scholastic Excellence Awards during their tenure as an undergraduate Brother.
                 <br /><br />
-
-                <img src={Wharton} alt="wharton scholarship"/>
-
+                <img src={Wharton} alt="T. Girard Wharton Award"/>
             </span>
         ),
         "H. Seger Slifer, E'12 Award": (
@@ -81,11 +72,7 @@ const Programs = () => {
                 <br /><br />
                 The members of the Alpha may nominate a senior member for the award based on "scholarship, activities, fraternal service and Chi Psi conduct." An application recommended by the Trustees of the Alpha Rho Alumni Association will be considered by the Trustees of the Foundation. An award of $250 is available.
                 <br /><br />
-                Thomas Carlyle's statement befits the brotherly exchange portrayed on this P&G cover from more than fifty years ago between B.M. Edwards, B'57 (alumnus initiate year), on the left, distinguished financial and civic leader in the South and fourth recipient of the Albert S. Bard Award, and H. Seger Slifer, A'11, E'12, the first #23, the 13th President of Chi Psi, and legendary figure in the fraternity world.
-                
-                <br /><br />
-                <img src={Seger} alt="seger scholarship"/>
-
+                <img src={Seger} alt="H. Seger Slifer Award"/>
             </span>
         ),
         "J. F. 'Jack' Schwanhausser, P'46 Leadership Award": (
@@ -100,9 +87,7 @@ const Programs = () => {
                 <br /><br />
                 The award is provided annually to the #1 of Alpha Rho of Chi Psi, half payable at the initiation banquet next following his taking of office and half payable at the initiation banquet next following his favorable term of service as judged by the Trustees of the Foundation with input from the Trustees of the Alpha Rho Alumni Association; the amount of the award shall be $1,000 in total.
                 <br /><br />
-
-                <img src={Jack} alt="jack scholarship"/>
-
+                <img src={Jack} alt="J. F. 'Jack' Schwanhausser Award"/>
             </span>
         ),
         "Dave MacDowell, P’59 Armed Forces Service Award": (
@@ -110,12 +95,11 @@ const Programs = () => {
                 The Dave MacDowell, P’59 Armed Forces Service Award is given annually in honor of Dave MacDowell, P’59, who served as President of the Alpha Rho Alumni Association and Trustee of the Alpha Rho Memorial Foundation following his graduation from Rutgers College and proud service in the United States Navy, serving in the Pacific from 1960 to 1963. The members of the Alpha may nominate a senior member for the award based on "scholarship, fraternal service, Chi Psi conduct, and leadership in their respective armed forces officer training program." Preference is given to participation in Reserve Officers Training Corps (ROTC) followed by admission to the Army, Marine Corps, Navy, or Cost Guard’s Officer Candidate School (OCS), or the Air Force’s Officer Training School (OTS).
                 <br /><br />
                 An application recommended by the Trustees of the Alpha Rho Alumni Association will be considered by the Trustees of the Foundation. An award of $200 is available. Multiple awards in a single year may be given at the sole discretion of the Trustees of the Foundation.
-                <br /><br />
             </span>
         ),
         "William Andrew Royce P’78 Spirit Award": (
             <span>
-                The William Andrew Royce P’78 Sprit Award is given annually in honor of William A. Royce, P’78, who continues to exemplify the Spirit of Chi Psi through his commitment to our silver bonds, personification of his belief that our greatest gifts are our relationships and memories, and through the gifts he has bestowed upon countless Brothers including, but not limited to, initiating generations of our newest Brothers into our silver bonds.
+                The William Andrew Royce P’78 Spirit Award is given annually in honor of William A. Royce, P’78, who continues to exemplify the Spirit of Chi Psi through his commitment to our silver bonds, personification of his belief that our greatest gifts are our relationships and memories, and through the gifts he has bestowed upon countless Brothers including, but not limited to, initiating generations of our newest Brothers into our silver bonds.
                 <br /><br />
                 The award is available each year to members of Alpha Rho of Chi Psi’s senior class. It is granted to a graduating Brother that has demonstrated that “Chi Psi is a Thing Of The Spirit.” The candidate need not have been an officer but nevertheless must have served the brotherhood as an inspirational leader in any area of life at the Lodge by his actions and the example he set. Special consideration is given to those candidates that have served accordingly as a mentor and role model to their underclass Brothers. The Foundation seeks specific examples of such conduct of the demonstration of these qualities, as a true Chi Psi gentleman.
                 <br /><br />
@@ -148,22 +132,22 @@ const Programs = () => {
     };
 
     const buttons = buttonNames.map(name => (
-        <button key={name} className="roundedButton" onClick={() => handleButtonClick(name)}>
+        <button key={name} className="programs-roundedButton" onClick={() => handleButtonClick(name)}>
             {name}
         </button>
     ));
 
     return (
-        <div className="main">
-            <div className="body">
+        <div className="programs-main">
+            <div className="programs-body">
                 <h2>Scholarship Awards</h2>
                 {scholarshipInfo}
                 <hr />
-                <div className="flexContainer">
-                    <div className="buttonContainer">
+                <div className="programs-flexContainer">
+                    <div className="programs-buttonContainer">
                         {buttons}
                     </div>
-                    <div className="contentContainer">
+                    <div className="programs-contentContainer">
                         <h3>{selectedScholarship}</h3>
                         <p>{scholarshipDescriptions[selectedScholarship]}</p>
                     </div>
@@ -174,3 +158,4 @@ const Programs = () => {
 };
 
 export default Programs;
+

@@ -1,23 +1,25 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './Components/NavBar.js';
-import Footer from './Components/Footer.js';
-import Home from './Pages/Home.js';
-import Programs from './Pages/Programs.js';
-import Donate from './Pages/Donate.js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from './Components/NavBar';
+import Footer from './Components/Footer';
+import Home from './Pages/Home';
+import Programs from './Pages/Programs';
+import Donate from './Pages/Donate';
+import History from './Pages/History'; // Assuming you have this component
 
 function App() {
   return (
     <Router>
       <NavBar />
-      <div>
-        <Routes>
-          <Route path='/' element={<Donate />} />
-          <Route path='/Programs' element={<Programs />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/programs' element={<Programs />} />
+        <Route path='/donate' element={<Donate />} />
+        <Route path='/history' element={<History />} /> {/* Assuming you have a history page */}
+      </Routes>
       <Footer />
     </Router>
   );
 }
 
 export default App;
+

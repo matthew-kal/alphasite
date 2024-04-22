@@ -1,67 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 
-.main {
+.programs-main {
     width: 100%;
-    font-family: platypi;
+    font-family: 'Platypi', sans-serif;
+    margin-top: 150px;
 }
-.body {
+
+.programs-body {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
 }
-.row {
+
+.programs-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.section {
+
+.programs-section {
     padding: 10px;
     text-align: center;
 }
-.flexContainer {
+
+.programs-flexContainer {
     display: flex;
     flex-direction: row;
 }
-.buttonContainer {
+
+.programs-buttonContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center the buttons */
     gap: 10px; /* Add space between buttons */
     margin-top: 20px; /* Spacing above the button group */
-    width: 20vw;
+    width: 100%; /* Adjusted for full width within the flex container */
 }
 
-.roundedButton {
-    width: 30vw;
-    height: 10vh;
+.programs-roundedButton {
+    width: auto; /* Adjusted for content fit */
+    min-width: 150px; /* Minimum width for better alignment */
+    height: auto;
     padding: 10px 20px;
     border: none;
     background-color: #4B3F72;
     color: white;
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 10px; /* Rounded corners */
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: platypi;
+    font-family: 'Platypi', sans-serif;
     font-size: 1.2vw;
 }
 
-.roundedButton:hover {
-    background-color: #DAA520; 
+.programs-roundedButton:hover {
+    background-color: #DAA520;
     color: black;
 }
 
-.contentContainer {
+.programs-contentContainer {
     padding-top: 10px;
     padding-left: 40px;
     width: 80%;
     float: right;
 }
-.contentContainer h3 {
+
+.programs-contentContainer h3 {
     text-align: center;
 }
-.contentContainer p {
+
+.programs-contentContainer p {
     text-align: center;
 }
-.contentContainer img {
+
+.programs-contentContainer img {
     width: 60%;
 }

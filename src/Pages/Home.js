@@ -82,12 +82,17 @@ const Home = () => {
         </div>
       );
 
+      const contactInfo = (
+        <div>
+          <h3>Contact the Foundation</h3>
+        </div>
+      );
 
     return (
         <div class="main">
-            <img src={lodge} alt={lodge}></img>
+           <img src={lodge} alt={lodge}></img>
             <div class="body">
-                <h2>ΧΨ | Alpha Rho Memorial Foundation</h2>
+                <h2 style={{ fontSize: '7.5vh', textAlign:'center' }}>ΧΨ | Alpha Rho <br/> Memorial Foundation</h2>
                 <p>Brothers in Chi Psi embrace a strong tradition, a standard of Brotherly Assistance which, in a unique way, is the basis of the Alpha Rho Memorial Foundation. To paraphrase; Brothers are expected to be "an inalienable and unalterable friend" to every other Brother who may, during his lifetime, "need succor and assistance".
                 <br /><br />The Foundation, incorporated in 1949 with the aims of encouraging academic excellence and assisting deserving student actives of Alpha Rho in time of need, provides practical demonstrations of that principle in all its activities. Brothers in Alpha Rho, then, have very real examples of Brotherly Assistance which very few other Alphas enjoy - the support, encouragement and aid of the Memorial Foundation promoting and contributing to the education of the undergraduate and graduate Brothers of Alpha Rho through the Foundation's organized ongoing programs.
                 <br /><br />The purpose of the Foundation may be briefly stated as "to aid, encourage, promote and contribute to the education of members of the Chi Psi Fraternity who from time to time shall be enrolled as students at Rutgers University."
