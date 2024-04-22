@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.main {
+    width: 100%;
+    font-family: platypi;
+}
+.main img {
+    width: 100%;
+}
+.body {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.body h2 {
+    font-size: 2.2vw;
+}
+.body p {
+    font-size: 1.2vw;
+}
+.memberInfo {
+    display: flex;        /* Use flexbox to handle the layout */
+    justify-content: space-around; /* Distribute space between the children */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    padding: 20px;       /* Optional: Adds some padding inside the container */
+    display: flex;
+    flex-direction: row;
+}
+.stack {
+    display: flex;
+    flex-direction: column;
+}
+.memberInfo a {
+    color: white;
+}
+.memberInfo hr {
+    width: 100%;
+}
+
+.memberInfo > div {
+    flex: 1;             /* Each child will take equal amount of space */
+    margin: 10px; 
+    height: 55vh;       /* Optional: Adds some space between the children */
+    padding: 20px;       /* Optional: Adds some padding inside each child */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow around each child */
+    background: #fff;    /* Optional: Sets a white background for each child */
+    border-radius: 8px;  /* Optional: Rounds the corners of each child */
+    background-color: #4B3F72;
+    color: white;
+}
+.body h3 {
+    font-size: 1.5vw;
+}
+

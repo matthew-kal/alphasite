@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+.sticky-header {
+  font-size: 35px;
+  font-family: Platypi;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #4B3F72;
+  z-index: 1000;
+  height: 130px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border-color: #FFD700;
+  border-width: 5px;
+}
+
+.nav-menu {
+  display: flex;
+  background: #4B3F72;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.nav-item {
+  font-family: Platypi;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  transition: color 0.7s ease, transform 0.7s ease;
+  display: inline-block;
+}
+
+.nav-item:hover {
+  color: #FFD700;
+  transform: scale(1.1);
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.chiPsiImage {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.chiPsiImage:hover {
+  background-color: #FFD700;
+  color: #FFD700; /* Changes the text color, if there's text inside the image container */
+  transform: scale(1.1); /* Scales the image to 110% of its original size */
+  box-shadow: 0px 0px 8px rgba(255, 215, 0, 0.7); /* Applies a gold glow */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  border-radius: 100%;
+}
+

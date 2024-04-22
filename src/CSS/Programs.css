@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+.main {
+    width: 100%;
+    font-family: platypi;
+}
+.body {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.section {
+    padding: 10px;
+    text-align: center;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Add space between buttons */
+    margin-top: 20px; /* Spacing above the button group */
+    width: 20vw;
+}
+
+.roundedButton {
+    width: 30vw;
+    height: 10vh;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4B3F72;
+    color: white;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: platypi;
+    font-size: 1.2vw;
+}
+
+.roundedButton:hover {
+    background-color: #DAA520; 
+    color: black;
+}
+
+.contentContainer {
+    padding-top: 10px;
+    padding-left: 40px;
+    width: 80%;
+    float: right;
+}
+.contentContainer h3 {
+    text-align: center;
+}
+.contentContainer p {
+    text-align: center;
+}
+.contentContainer img {
+    width: 60%;
+}
