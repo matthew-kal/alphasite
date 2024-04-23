@@ -13,16 +13,16 @@
     padding-right: 10%;
 }
 .body h2 {
-    font-size: 2.2vw;
+    font-size: 4.5vw;
 }
 .body p {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
 }
 .memberInfo {
-    display: flex;        /* Use flexbox to handle the layout */
-    justify-content: space-around; /* Distribute space between the children */
-    align-items: flex-start; /* Align items to the start of the flex container */
-    padding: 20px;       /* Optional: Adds some padding inside the container */
+    display: flex;       
+    justify-content: space-around; 
+    align-items: flex-start; 
+    padding: 20px;    
     display: flex;
     flex-direction: row;
 }
@@ -32,23 +32,28 @@
 }
 .memberInfo a {
     color: white;
+    font-size: 1.2vw;
+
 }
+
 .memberInfo hr {
     width: 100%;
 }
 
 .memberInfo > div {
-    flex: 1;             /* Each child will take equal amount of space */
+    flex: 1;           
     margin: 10px; 
-    height: 55vh;       /* Optional: Adds some space between the children */
-    padding: 20px;       /* Optional: Adds some padding inside each child */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow around each child */
-    background: #fff;    /* Optional: Sets a white background for each child */
-    border-radius: 8px;  /* Optional: Rounds the corners of each child */
+    height: 40vw;      
+    padding: 20px;      
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    background: #fff;  
+    border-radius: 8px; 
     background-color: #4B3F72;
     color: white;
 }
 .body h3 {
     font-size: 1.5vw;
 }
+
+
 

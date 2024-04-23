@@ -4,6 +4,7 @@
     width: 100%;
     font-family: 'Platypi', sans-serif;
     margin-top: 150px;
+    font-size: 1.3vw;
 }
 
 .programs-body {
@@ -30,26 +31,29 @@
 
 .programs-buttonContainer {
     display: flex;
+    align-self: flex-start;
     flex-wrap: wrap;
-    justify-content: center; /* Center the buttons */
-    gap: 10px; /* Add space between buttons */
-    margin-top: 20px; /* Spacing above the button group */
-    width: 100%; /* Adjusted for full width within the flex container */
+    flex-direction: column;
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px; 
+    width: 50%; 
 }
 
 .programs-roundedButton {
-    width: auto; /* Adjusted for content fit */
-    min-width: 150px; /* Minimum width for better alignment */
+    width: auto; 
+    min-width: 150px; 
     height: auto;
     padding: 10px 20px;
     border: none;
     background-color: #4B3F72;
     color: white;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px; 
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-family: 'Platypi', sans-serif;
     font-size: 1.2vw;
+    text-decoration: none;
 }
 
 .programs-roundedButton:hover {
@@ -62,16 +66,41 @@
     padding-left: 40px;
     width: 80%;
     float: right;
+    display: flex;            
+    flex-direction: column;   
 }
-
 .programs-contentContainer h3 {
     text-align: center;
 }
-
 .programs-contentContainer p {
     text-align: center;
 }
-
 .programs-contentContainer img {
     width: 60%;
 }
+.programs-roundedButton2 img {
+    width: 5%;
+}
+.programs-roundedButton2 {
+    display: flex;           
+    align-items: center;      
+    justify-content: center;  
+    text-align: left;         
+    gap: 10px; 
+    width: auto;
+    min-width: 150px; 
+    height: auto;
+    padding: 10px 20px;
+    border: solid;
+    border-width: 2px;
+    background-color: white;
+    color: black;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Platypi', sans-serif;
+    font-size: 1.2vw;
+    text-decoration: none;  
+               
+}
+

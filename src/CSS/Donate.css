@@ -2,8 +2,9 @@
 
 .donate-main {
     width: 100%;
-    font-family: 'Platypi', sans-serif; /* Ensure correct font is specified */
+    font-family: 'Platypi', sans-serif; 
     margin-top: 150px;
+    font-size: 1.3vw;
 }
 
 .donate-body {

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../CSS/Donate.css'; // Ensure this path matches your actual CSS file location
-import paypal from '../Images/paypal.png'; // Ensure this path and file name are correct
+import '../CSS/Donate.css'; 
+import paypal from '../Images/paypal.png'; 
 
 const Donate = () => {
 
@@ -36,7 +36,7 @@ const Donate = () => {
     );
 
     const donationButton = (
-        <div style={{ paddingTop: '150px' }}>
+        <div style={{ paddingTop: '1vw' }}>
             <a href="https://www.paypal.com/cgi-bin/webscr" target="_blank" rel="noreferrer">
                 <img src={paypal} alt="paypal link"/>
             </a>

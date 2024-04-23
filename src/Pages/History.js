@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';  // Import React and useStat
 const History = () => {
 
     const page1 = (
-        <div>
+        <div >
             <h2>Overview</h2>
             <p>
             While, over the years Alpha Rho alumni had given "aid and assistance to needy active members" the first recorded move toward a student aid program was in 1933 during the depths of the great depression when in order to keep a senior in college the Trustees of the Alpha Rho Alumni Association appealed to the alumni members of Alpha Rho for contributions to a Student Aid Fund. The same year, 1933, marked the introduction of the Insurance Program which the Trustees urged the Alpha to adopt. While student aid was not a prime purpose of the Insurance Program, it was a stated objective that, once the mortgage was liquidated, funds would be set aside for student aid. The Insurance Program which provided for a pledge of $250 to be made by each member was approved unanimously by the Alpha and was continued as a mandatory condition of membership until the adoption of the Alpha Building Program of Chi Psi approved by the 121st Convention of the Fraternity in Ann Arbor, June 1962. The program adopted by the Alpha in 1933 provided a substantial base for student aid.
@@ -16,8 +16,11 @@ const History = () => {
             <br /><br />
             Before the actual hostilities had started during World War II, the Alpha was saddened to learn that Walter W. Winika, P 1936, (Lt. U. S. Naval Air Force) had been killed while on patrol duty at Trinidad. To the money received from his participation in the Insurance Program was added several gifts from friends and classmates to establish the Walter W. Winika, P 1936 Fund. As the war went on, the list of fine young Brothers of our Alpha who lost their lives in the service of their country during the period 1942-1946 increased to eleven. With the report of each fatality, the Association Trustees took immediate action to memorialize the Brother and established a Fund in his memory, in most instances using proceeds of the individual's participation in the Insurance Program as the initial basis of the Fund. In addition, families, friends and the trustees also contributed to the established Fund. The Brothers lost during World War II along with a casualty of the Vietnam (E. K. Kissam, Jr., P 1955) and Korean (J. Clendinning, III, P 1947) conflicts constitute the Gold Star Funds of the Foundation. 
             </p>   
-            <div class="row">
-            <div class="section">
+
+
+        
+            <div class="history-row">
+            <div class="history-section">
             <p>
                 <u>Gold Star Fund</u>
                 <br />
@@ -48,7 +51,7 @@ const History = () => {
                 Edward K. Kissam, Jr., P 1955
             </p>
         </div>
-        <div class="section">
+        <div class="history-section">
         <p>
             <u>Year Established</u>
             <br />
@@ -205,7 +208,7 @@ const History = () => {
     
     useEffect(() => {
         const toggleVisibility = () => {
-            if (window.scrollY > 50) {  // Button shows when scrolled more than 300px
+            if (window.scrollY > 50) {  
                 setShowScrollTopButton(true);
             } else {
                 setShowScrollTopButton(false);

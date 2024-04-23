@@ -2,7 +2,8 @@
 
 .history-main {
     width: 100%;
-    font-family: 'Platypi', sans-serif; /* Ensure the font name is correctly specified */
+    font-family: 'Platypi', sans-serif; 
+    font-size: 1.3vw;
 }
 
 .history-body {
@@ -27,15 +28,16 @@
     width: 15vw;
     height: 6vh;
     padding: 10px;
+    margin-top: 10px;
     border: none;
     background-color: #4B3F72;
     color: white;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px; 
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: 'Platypi'; /* Make sure to check the correct font name */
+    font-family: 'Platypi'; 
     font-size: 1.2vw;
-    margin-right: 10px; /* Space between buttons */
+    margin-right: 10px;
 }
 
 .history-button:hover {
@@ -43,7 +45,6 @@
     color: black;
 }
 
-/* Remove margin on the last button */
 .history-button:last-child {
     margin-right: 0;
 }
@@ -69,6 +70,12 @@
 
 .scroll-to-top:hover {
     background-color: #DAA520;
+}
+
+.central {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 

@@ -4,7 +4,7 @@ import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import Programs from './Pages/Programs';
 import Donate from './Pages/Donate';
-import History from './Pages/History'; // Assuming you have this component
+import History from './Pages/History'; 
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/programs' element={<Programs />} />
         <Route path='/donate' element={<Donate />} />
-        <Route path='/history' element={<History />} /> {/* Assuming you have a history page */}
+        <Route path='/history' element={<History />} /> 
       </Routes>
       <Footer />
     </Router>

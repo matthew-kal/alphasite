@@ -66,6 +66,7 @@ const Home = () => {
       const resourcesInfo = (
         <div>
           <h3>Resources</h3>
+          <p>
           <a href="https://chipsirutgers.wixsite.com/chipsirutgers" target="_blank" rel="noopener noreferrer">Alpha Rho of ΧΨ</a>
           <br/>
           <br/>
@@ -79,6 +80,7 @@ const Home = () => {
           <br />
           <br />
           <a href="https://www.rutgers.edu/" target="_blank" rel="noopener noreferrer">Rutgers University</a>
+          </p>
         </div>
       );
 
@@ -92,7 +94,7 @@ const Home = () => {
         <div class="main">
            <img src={lodge} alt={lodge}></img>
             <div class="body">
-                <h2 style={{ fontSize: '7.5vh', textAlign:'center' }}>ΧΨ | Alpha Rho <br/> Memorial Foundation</h2>
+                <h2 style={{ textAlign:'center' }}>ΧΨ | Alpha Rho Memorial Foundation</h2>
                 <p>Brothers in Chi Psi embrace a strong tradition, a standard of Brotherly Assistance which, in a unique way, is the basis of the Alpha Rho Memorial Foundation. To paraphrase; Brothers are expected to be "an inalienable and unalterable friend" to every other Brother who may, during his lifetime, "need succor and assistance".
                 <br /><br />The Foundation, incorporated in 1949 with the aims of encouraging academic excellence and assisting deserving student actives of Alpha Rho in time of need, provides practical demonstrations of that principle in all its activities. Brothers in Alpha Rho, then, have very real examples of Brotherly Assistance which very few other Alphas enjoy - the support, encouragement and aid of the Memorial Foundation promoting and contributing to the education of the undergraduate and graduate Brothers of Alpha Rho through the Foundation's organized ongoing programs.
                 <br /><br />The purpose of the Foundation may be briefly stated as "to aid, encourage, promote and contribute to the education of members of the Chi Psi Fraternity who from time to time shall be enrolled as students at Rutgers University."
@@ -102,9 +104,9 @@ const Home = () => {
                     {trusteesInfo}
                     {officersInfo}  
                     <div class="memberInfo, stack">
-                      <div id="advisorsInfo">{advisorsInfo}</div>
+                      {advisorsInfo}
                       <hr />
-                      <div id="resourcesInfo">{resourcesInfo}</div>
+                      {resourcesInfo}
                     </div>
                 </div>
                 

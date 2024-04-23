@@ -11,20 +11,21 @@
 }
 
 .footerPic {
-    width: 180px;
+    width: 11vw;
 }
 
 .footerPic2{
-    height: 190px;
-    width: 290px;
-    padding: 20px;
+    width: 20vw;
+    padding: 17px;
 
 }
 .bottomText{
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     font-family: Platypi;
     background-color: #f5f5f5;
+    font-size: 1.3vw;
 }
 

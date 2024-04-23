@@ -4,6 +4,13 @@ import Neophyte from '../Images/Neophyte.jpg';
 import Jack from '../Images/Jack.jpg';
 import Seger from '../Images/Seger.jpg';
 import Wharton from '../Images/Wharton.jpg';
+import download_icon from '../Images/download_icon1.png';
+import file1 from '../Files/armf-application-macdowell-award-v20230123.doc';
+import file2 from '../Files/armf-application-royce_scholarship-award-v20230302.doc';
+import file3 from '../Files/armf-application-scholarship-improvement-award-v20230123.doc';
+import file4 from '../Files/armf-application-scholarship-incentive-award-v20230123 (2).doc';
+import file5 from '../Files/armf-application-wharton-award-v20230123.doc';
+import file6 from '../Files/armf-gia-v20230123.doc';
 
 const Programs = () => {
 
@@ -124,7 +131,42 @@ const Programs = () => {
                 Brothers must apply for all Grants-In-Aid. Applications recommended by the #1 and the #4 of the Alpha, the Trustees of the Alpha Rho Alumni Association or the Joint Committee on Grants-In-Aid Applications of the Alpha Rho Alumni Association and the Alpha Rho Memorial Foundation, as the case may be, will be considered by the Trustees of the Foundation, who will, in due course, approve or disapprove applications in their sole and absolute discretion.
             </span>
         ),
-        "Forms & Applications": "Content for Forms & Applications..."
+        "Forms & Applications": (
+            
+            <span>   
+             <a class="programs-roundedButton2" href={file1} download="armf-application-scholarship-incentive-award-v20230123.doc">
+            <img src={download_icon} alt="download"></img>
+            Scholarship Incentive Award Application
+            </a>
+            <br />
+            <a class="programs-roundedButton2" href={file2} download="armf-application-scholarship-improvement-award-v20230123.doc">
+            <img src={download_icon} alt="download"></img>
+            Scholarship Improvement Award Application
+            </a>
+            <br />
+            <a class="programs-roundedButton2" href={file3} download="armf-application-macdowell-award-v20230123.doc">
+            <img src={download_icon} alt="download"></img>
+            Dave MacDowell, P’59 Armed Forces Service Award Application
+            </a>
+            <br />
+            <a class="programs-roundedButton2" href={file4} download="armf-application-royce_scholarship-award-v20230302.doc">
+            <img src={download_icon} alt="download"></img>
+            William Andrew Royce, P'78 Spirit Award Application
+            </a>
+            <br />
+            <a class="programs-roundedButton2" href={file5} download="armf-application-wharton-award-v20230123.doc">
+            <img src={download_icon} alt="download"></img>
+            T. Girard Wharton, P'25 Awards Application
+            </a>
+            <br />
+            <a class="programs-roundedButton2" href={file6} download="armf-gia-v20230123.doc">
+            <img src={download_icon} alt="download"></img>
+            Grant-In-Aid Application
+            </a>
+
+        </span>
+        
+        ),
     };
 
     const handleButtonClick = name => {
@@ -150,6 +192,7 @@ const Programs = () => {
                     <div className="programs-contentContainer">
                         <h3>{selectedScholarship}</h3>
                         <p>{scholarshipDescriptions[selectedScholarship]}</p>
+                        
                     </div>
                 </div>
             </div>
