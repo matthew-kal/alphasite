@@ -3,7 +3,7 @@
 .main {
     width: 100%;
     font-family: platypi;
-    margin-top: 90px;
+    margin-top: 110px;
 }
 .main img {
     width: 100%;
@@ -53,6 +53,12 @@
 }
 .body h3 {
     font-size: 1.5vw;
+}
+.contact {
+    text-align: center;
+    font-size: 1.2vw;
+    text-decoration: none;
+    padding-bottom: 30px;
 }
 
 

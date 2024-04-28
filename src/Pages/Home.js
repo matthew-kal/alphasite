@@ -1,4 +1,4 @@
-import lodge from '../Images/lodge.jpeg'
+import lodge from '../Images/lodge_day.jpg'
 import '../CSS/Home.css'
 
 const Home = () => {
@@ -87,6 +87,7 @@ const Home = () => {
       const contactInfo = (
         <div>
           <h3>Contact the Foundation</h3>
+          <a href="mailto:Info@AlphaRhoMemorialFoundation.org">Info@AlphaRhoMemorialFoundation.org</a>
         </div>
       );
 
@@ -108,8 +109,12 @@ const Home = () => {
                       <hr />
                       {resourcesInfo}
                     </div>
+                    
                 </div>
-                
+                <hr />
+                <div class="contact">
+                  {contactInfo}
+                </div>               
             </div>
 
         </div>
